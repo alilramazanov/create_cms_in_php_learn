@@ -1,3 +1,3 @@
 <?php
 
-echo 1;
+require 'engine/bootstrap.php';

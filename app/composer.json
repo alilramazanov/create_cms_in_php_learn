@@ -1,0 +1,15 @@
+{
+    "name": "alil/app",
+    "authors": [
+        {
+            "name": "alil",
+            "email": "ramazan0vvalery1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "engine/"
+        }
+    }
+}

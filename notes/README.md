@@ -4,4 +4,5 @@
 
 ## Структура
 
+- [**Front Controller (точка входа в приложение)**](FrontController/README.md)
 - [**DI (контейнер зависимостей)**](DI/README.md)
