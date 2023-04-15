@@ -13,5 +13,8 @@
         "psr-4": {
             "Engine\\": "engine/"
         }
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "^3.3"
     }
 }

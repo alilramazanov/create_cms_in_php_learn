@@ -2,16 +2,25 @@
 
 namespace Engine;
 
-// Класс CMS это точка запуска приложения, которая будет принимать только DI контейнер
+use Engine\Core\Router\Router;
+use Engine\DI\DI;
+
+/**
+ * Класс CMS это точка запуска приложения, которая будет принимать только DI контейнер
+ * @property DI $di
+ * @property Router $router
+ */
 class Cms
 {
+    private DI $di;
 
-    private $DI;
+	public Router $router;
 
 
-    public function __construct($di)
+    public function __construct(DI $di)
     {
-        $this->DI = $di;
+        $this->di = $di;
+		$this->router = $this->di->get('router');
     }
 
     /**
@@ -19,7 +28,10 @@ class Cms
      * @return void
      */
     public function run(){
-        echo "Hello CMS";
+        $this->router->add('home', '/','HomeController:index');
+        $this->router->add('product', '/product/{id}','ProductController:index');
+
+		dump($this->di);
     }
 
 }

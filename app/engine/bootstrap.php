@@ -24,8 +24,7 @@ try {
     $cms = new Cms($di);
     $cms->run();
 
-    $connection = new Connection();
-    var_dump($connection);
 } catch (ErrorException $e) {
     echo $e->getMessage();
 }
+
