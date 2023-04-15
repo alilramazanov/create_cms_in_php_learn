@@ -6,7 +6,9 @@
             "email": "ramazan0vvalery1@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "Engine\\": "engine/"
